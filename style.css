@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
 
-:root {
-  --customColor: #0044ff;
-  --purple: #ce00ff;
+/* :root {
+    --purple: #ce00ff;
   --blue: #0044ff;
   --orange: #ff4600;
   --cyan: #03ffc7;
   --light: #33b3e6;
-}
+} */
 
 
 *,
@@ -93,7 +92,7 @@ li {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: var(--customColor);
+  background-color:  #0044ff;
   box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
   z-index: 999;
 }
@@ -115,7 +114,7 @@ li {
 
 .logo h1 span {
   font-weight: bold;
-  color: var(--customColor);
+  color:  #0044ff;
 }
 
 .nav-list {
@@ -136,7 +135,7 @@ li {
 
 .nav-link:hover {
   border-radius: .3rem;
-  background-color: var(--customColor);
+  background-color:  #0044ff;
 }
 
 .hamburger,
@@ -166,7 +165,7 @@ li {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--customColor);
+    background-color: #0044ff;
     padding: 1rem 1.6rem;
   }
 
@@ -214,6 +213,16 @@ li {
     background-color: rgba(0, 0, 0, .8);
   }
 }
+/* .media-icons{
+  margin-top: 50px;
+}
+
+.media-icons a{
+  color: #fff;
+  font-size: 25px;
+  margin-top: 400px;
+  margin-right: 300px;
+} */
 
 /* Hero */
 .hero {
@@ -235,7 +244,7 @@ li {
 }
 .hero h1 {
    /* border-left: 10px blue solid; */
-   border-left: 10px var(--customColor) solid;
+   border-left: 10px var #0044ff solid;
   font-size: 9rem;
   margin: 0;
 }
@@ -245,7 +254,7 @@ li {
 }
 
 .hero h4 span {
-  color: var(--customColor);
+  color: var #0044ff;
   text-decoration: underline;
 }
 
@@ -253,8 +262,8 @@ li {
 .hero a:visited {
   display: inline-block;
   padding: .8rem 2.5rem;
-  border: 1px solid var(--customColor);
-  background-color: var(--customColor);
+  border: 1px solid  #0044ff;
+  background-color:  #0044ff;
   color: #fff;
   margin-top: 2rem;
 }
@@ -320,14 +329,21 @@ li {
 
 }
 
-.icons {
+.media-icons{
   position: absolute;
   bottom: 5%;
   right: 10%;
-  color: #fff
+  color: #fff;
+}
+.media-icons i{
+  /* height: 50px;*/
+  /* width:25px; */
+  font-weight: 40px;
+  font-size: 30px;
+  margin-right: 15px;
 }
 
-.icons span:not(:last-child) {
+/* .icons span:not(:last-child) {
 
   margin-right: 1rem;
 }
@@ -336,10 +352,10 @@ li {
   font-size: 2rem;
   cursor: pointer;
   transition: all 300ms ease-in-out;
-}
+} */
 
 .icons span:hover i {
-  color: var(--customColor);
+  color:  #0044ff;
 }
 
 @media only screen and (max-width: 967px) {
@@ -459,7 +475,7 @@ li {
   left: 50%;
   bottom: -20%;
   transform: translate(-50%, -50%);
-  background-color: var(--customColor);
+  background-color:  #0044ff;
   width: 50%;
   height: .4rem;
   z-index: 1;
@@ -482,7 +498,7 @@ li {
 }
 
 .right h1 span {
-  color: var(--customColor);
+  color: #0044ff;
 }
 
 a.btn,
@@ -490,10 +506,10 @@ a.btn,
   width:auto;
   display: inline-block;
   padding: 1rem 2rem;
-  background-color: var(--customColor);
+  background-color: #0044ff;
   color: #fff;
   border-radius: .5rem;
-  border: 2px solid var(--customColor);
+  border: 2px solid #0044ff;
   box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
   transition: all 300ms ease-in-out;
 }
@@ -572,7 +588,7 @@ a.btn:active,
 }
 
 .education span {
-  color: var(--customColor);
+  color:  #0044ff;
   font-size: 4rem;
   transition: all 300ms ease-in-out;
 }
@@ -588,7 +604,7 @@ a.btn:active,
 }
 
 .education:hover {
-  background-color: var(--customColor);
+  background-color: #0044ff;
 }
 
 .education span:hover{
@@ -621,7 +637,7 @@ a.btn:active,
 }
 
 .skills-box .skills-bar {
-  background-color: var(--customColor);
+  background-color:  #0044ff;
   height: .4rem;
 }
 
@@ -720,7 +736,7 @@ a.btn:active,
   width:  150px;
    margin-top: 15px;
    border-radius: 7px;
-   background-color:var(--customColor);
+   background-color: #0044ff;
 }
 #btnn2:hover{
   background-color: black;
@@ -848,7 +864,7 @@ button:hover {
   display: inline-block;
   padding: .7rem 0;
   color:white;
-  border-bottom: 2px solid var(--customColor);
+  border-bottom: 2px solid #0044ff;
 }
 
 @media only screen and (max-width: 768px) {
@@ -867,7 +883,7 @@ button:hover {
 }  
   .project-box:hover {
     border-bottom: 4px solid #fff;
-    background-color: var(--customColor);
+    background-color:  #0044ff;
     /* background-color: white; */
 
   }
@@ -908,7 +924,7 @@ button:hover {
 .left .icon{
   margin-right: 2rem;
   font-size: 2.3rem;
-  color: var(--customColor);
+  color: #0044ff;
 }
 
 form h2{
@@ -974,5 +990,5 @@ footer p{
 }
 
 footer p span{
-  color: var(--customColor);
+  color:  #0044ff;
 }

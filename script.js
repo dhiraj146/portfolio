@@ -1,24 +1,24 @@
 const navBar = document.querySelector(".nav");
-const navHeight = navBar.getBoundingClientRect().height;
-window.addEventListener("scroll", () => {
-  const scrollHeight = window.pageYOffset;
+const navHeight = navBar.getBoundingClientRect().height; //nav bar height
+window.addEventListener("scroll", () => {     //toskills scroll (on mouse ,mouse over,mouse dwon)
+  const scrollHeight = window.pageYOffset;    //arrow fun
   if (scrollHeight > navHeight) {
-    navBar.classList.add("fix-nav");
+    navBar.classList.add("fix-nav"); //  open a section
   } else {
     navBar.classList.remove("fix-nav");
   }
 });
 
 // Scroll To
-const links = [...document.querySelectorAll(".scroll-link")];
-links.map((link) => {
-  link.addEventListener("click", (e) => {
-    e.preventDefault();
+const links = [...document.querySelectorAll(".scroll-link")]; //rest parameter
+links.map((link) => {                     //arow fun link as parameter
+  link.addEventListener("click", (e) => {   //event fire
+    e.preventDefault();                     //prevent default behaviour like colour change
 
     const id = e.target.getAttribute("href").slice(1);
     const el = document.getElementById(id);
     const fixNav = navBar.classList.contains("fix-nav");
-    let position = el.offsetTop - navHeight;
+    let position = el.offsetTop - navHeight; // nav bar automatically adjust
 
     window.scrollTo({
       top: position,
@@ -52,31 +52,9 @@ navClose.addEventListener("click", () => {
     navBar.classList.remove("show");
   }
 });
-
-// Colors
-
-const widget = document.querySelector(".widget");
-const control = document.querySelector(".control");
-
-widget.addEventListener("click", () => {
-  control.classList.toggle("open");
-});
-
-const colors = [...document.querySelectorAll(".colors span")];
-document.querySelector(":root").style.setProperty("--customColor", "#0044ff");
-
-colors.forEach((color) => {
-  color.addEventListener("click", () => {
-    const currentColor = color.dataset.id;
-    document
-      .querySelector(":root")
-      .style.setProperty("--customColor", currentColor);
-  });
-});
-
-window.addEventListener("scroll", () => {
-  control.classList.remove("open");
-});
+// window.addEventListener("scroll", () => {
+//   control.classList.remove("open");
+// });
 
 AOS.init();
 
@@ -129,6 +107,7 @@ gsap.from(".icons span", {
   x: -30,
   stagger: 0.2,
 });
+// weather app
 let temperature = document.getElementById('placetemp');
 let weathertype = document.getElementById('weathertype');
 let weathertypeimg = document.getElementById('weather-type-img');
