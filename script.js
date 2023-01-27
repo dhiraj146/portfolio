@@ -69,6 +69,9 @@ new TypeIt("#type1", {
   .type("Developer", { delay: 400 })
   .pause(500)
   .delete(9)
+  .type("Problem Solver", { delay: 400 })
+  .pause(500)
+  .delete(9)
   .go();
 
 new TypeIt("#type2", {
@@ -80,6 +83,9 @@ new TypeIt("#type2", {
   .pause(500)
   .delete(9)
   .type("Developer", { delay: 400 })
+  .pause(500)
+  .delete(9)
+  .type("Problem Solver", { delay: 400 })
   .pause(500)
   .delete(9)
   .go();
